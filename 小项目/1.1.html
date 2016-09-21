@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	.right{
+		width: 100px;
+		height: 100px;
+		background: blue;
+		margin: 20px 60px;
+	}
+	</style>
+</head>
+<body>
+<div class="wrap">
+<input type="button" value="变宽" class="one"></input>
+<input type="button" value="变高" class="two"></input>
+<input type="button" value="变色" class="three"></input>
+<input type="button" value="隐藏" class="four"></input>
+<input type="button" value="重置" class="five"></input>
+<div class="right" id="right1"></div>
+</div>
+</body>
+</html>
+<script src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(".one").click(function(){
+             $("#right1").css("width","200px");
+   });
+	$(".two").click(function(){
+             $("#right1").css("height","200px");
+   });
+	$(".three").click(function(){
+             $("#right1").css("background","yellow");
+   });
+	$(".four").click(function(){
+             $("#right1").hide()
+   });
+	$(".five").click(function(){
+             $("#right1").removeAttr("style");
+   });
+</script>

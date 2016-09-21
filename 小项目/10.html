@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<dl id="idl">
+<dt id="dt1">菜单1</dt>
+<dd >功能1</dd>
+<dd>功能2</dd>
+<dt id="dt2">菜单2</dt>
+<dd>功能3</dd>
+用dl实际左侧菜单功能 点击菜单1的时候 显示功能1 功能2 并让功能3隐藏。
+</body>
+</html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#idl dt").click(function(){
+    var me = $(this);
+    me.nextUntil("dt").toggle();
+});
+</script>

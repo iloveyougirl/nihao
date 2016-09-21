@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./js/bootstrap.css">
+</head>
+<body>
+<button type="button" class="btn btn-primary " id="btn-1">Block level button</button>
+<div  id="content-1"></div>
+</body>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#btn-1").click(function(){
+			$.ajax({
+				type:"get",
+				url:"http://d.widalian.com:8600/appsrv/api/merchant/detail/CSH2/-/MC01116020020148 ",
+				dataType:"json",
+				data:{
+					// token:"CSH2",
+					// sessionid:"-",
+					// merchantid:"MC01116020020148",
+					// buildingid:"MK0111602002",
+					// cityname:"%E5%A4%A7%E8%BF%9E",
+					// movieid:"165359",
+					// cityid:"11602",
+					// longitude:"121.64",
+					// latitude:"121.64",
+					// radius:"323333999",
+					// pagenumber:"0",
+					// pagesize:"5",
+					// couponid:"25",
+					// cinemasid:"1133"
+					},
+				success:function(e){
+                	console.log(e);
+				},
+				error:function(s){
+					console.log(s);
+				}
+			})
+		})
+	})
+</script>
+</html>

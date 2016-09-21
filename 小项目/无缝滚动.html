@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding:0;}
+   #middle{border:1px solid red;height: 324px;width: 300px;overflow: hidden;border-top: 0;}
+	 h4{background: blue;text-align: center;height:34px;width: 302px;line-height: 34px;}
+	#middle ul{list-style: none;}
+	#middle ul li{padding-top: 10px;padding-left: 10px;}
+	</style>
+</head>
+<body>
+    <h4>新歌首发</h4>
+	<div id="middle">
+	   <ul id="area">
+	   	 <li>1.致爱-yoursong</li>
+	   	 <li>2.鹿晗-thatgoodgood</li>
+	   	 <li>3.薛之谦的-演员</li>
+	   	 <li>4.莫露露-爱情主演</li>
+	   	 <li>5.月色相</li>
+	   	 <li>6.只要有你</li>
+	   	 <li>7.把悲伤留给自己</li>
+	   	 <li>8.菊花香</li>
+	   	 <li>9.存在</li>
+	   	 <li>10.双节棍</li>
+	   	 <li>11.补回</li>
+	   	 <li>12.在哪里</li>
+         <li>13.三姐夫那大家妇女的</li>
+	   </ul>
+	    <ul id="area2">
+	   	 <li>1.致爱-yoursong</li>
+	   	 <li>2.鹿晗-thatgoodgood</li>
+	   	 <li>3.薛之谦的-演员</li>
+	   	 <li>4.莫露露-爱情主演</li>
+	   	 <li>5.月色相</li>
+	   	 <li>6.只要有你</li>
+	   	 <li>7.把悲伤留给自己</li>
+	   	 <li>8.菊花香</li>
+	   	 <li>9.存在</li>
+	   	 <li>10.双节棍</li>
+	   	 <li>11.补回</li>
+	   	 <li>12.在哪里</li>
+         <li>13.三姐夫那大家妇女的</li>
+	   </ul>
+	   <ul id="area3"></ul>
+    </div>
+    <script type="text/javascript">
+    var area=document.getElementById('middle');
+    	var area1=document.getElementById('area');
+    	var area3=document.getElementById('area3');
+    	area3.innerHTML=area1.innerHTML;
+    function message(){
+    	if(area.scrollTop>=area1.offsetHeight){
+    		area.scrollTop=0
+    	}
+    	else{area.scrollTop++;}
+    }
+    	var myscroll=setInterval('message()',50); 
+
+        area.onmouseover=function(){
+   		clearInterval(myscroll);
+    	}
+      area.onmouseout=function(){
+   	 myscroll=setInterval('message()',50);
+    } 
+    </script>
+</body>
+</html>

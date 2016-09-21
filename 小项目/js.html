@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function rec(){
+			var my="wo shi shuai getElame"
+			alert(my)
+		}
+		function abc(){
+			var ad=confirm("我是不是你最爱的人？")
+			if (ad==true) {document.write("你是女士")}
+			else{document.write("你是男士")}
+        }
+         function cj(){
+            var score=prompt("输入你的成绩：")
+            if (score>=60) {document.write("bang")}
+         	else {document.write("nu li")}}
+         function hidetext(){
+         	document.getElementById("ni").style.display="none"
+         }
+          function showtext(){
+         	document.getElementById("ni").style.display="block"
+         }
+	</script>
+</head>
+<body>
+	<input type="button" name="buttom" onclick="rec()" value="点击我，弹出对话框">
+	<input type="button" name="buttom" onclick="abc()" value="点击我，弹出对话框">
+	<input type="button" name="buttom" onclick="cj()" value="点击我，对成绩作评价！">	
+	<h2 id="con"> 我爱你</h2>
+	<script type="text/javascript">
+		var love=document.getElementById("con");
+         love.style.color="red";
+         love.style.fontsize="20";
+         love.style.background="#ccc";
+	</script>
+	<p id="ni">我是一个大帅哥我爹激发你吩咐我姐夫那技能范围分为经济为解决烦恼就我发你忘记我叫我姐姐我今晚就今晚你就叫我姐姐姐姐姐姐姐姐今年就急急急急急急急急急急急急急急急急急急急急急急急急急急急</p>
+	<input type="button" name="buttom" onclick="hidetext()" value="隐藏内容">
+	<input type="button" name="buttom" onclick="showtext()" value="显示内容">	
+     
+
+
+    
+</body>
+</html>

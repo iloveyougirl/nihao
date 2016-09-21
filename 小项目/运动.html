@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>速度动画</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0}
+		#div1{width: 200px;height: 200px;background: red;position: relative;left: -200px}
+		#share{width: 20px;height: 40px;background: blue;position: absolute;top: 70px;left: 200px}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var d=document.getElementById('div1');
+			d.onmouseover=function(){con(0);}
+			d.onmouseout=function(){con(-200);}
+		   }
+		var timer=null;
+		function con(iTarget){
+			clearInterval(timer);
+			var d=document.getElementById('div1');
+			timer=setInterval(function(){
+				var speed=0;
+				if(d.offsetLeft<iTarget){speed=5;}
+				else  {speed=-5}
+			 d.style.left=d.offsetLeft+speed+'px';
+				if (d.offsetLeft==iTarget) {
+				clearInterval(timer);}	
+		     },30)
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<span id="share">分享</span>
+	</div>
+</body>
+</html>
