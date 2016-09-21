@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iYouth</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<style type="text/css">
+	*{
+		margin: 0;
+		 padding: 0;
+	 }
+	#header{
+		height: 124px;
+	}
+	#header h1{font-size: 50px;
+		position: absolute;
+		top: 30px;left:40px;
+	}
+	#header p{
+		background: #5CADAD;
+		width: 107px;
+		height: 36px;
+		border-radius: 5px;
+		text-align: center;
+		line-height: 36px;
+		position: absolute;
+		top:30px;right: 90px;
+		font-size: 25px;
+		font-family: "华文彩云";
+	}
+	#wrap{
+		height: 422px;
+		background: #4DFFFF;
+	}
+	#wrap .left{
+		height: 252px;
+		width: 302px;
+		background: #FFDAC8;
+		border-radius: 20px;
+		margin-top: 74px;
+		margin-left: 41px;
+		float: left;
+	}
+	#wrap .left div{
+		background:#E0E0E0;
+		height:240px;
+		width:290px;
+		margin:6px;
+		border-radius: 10px;
+	}
+	#wrap .left div p{
+		padding-top: 10px;
+		text-align: center;
+	}
+	#wrap .left div #boy,#girl{
+		float: left;
+		width: 100px;
+		height: 30px;
+		background: #FFFFFF;
+		text-align: center;
+		line-height: 20px;
+		margin-left: 30px;
+		margin-top: 20px;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	#wrap .right{
+		margin-top: 50px;
+		margin-right: 280px;
+		height: 326px;
+		width: 732px;
+		float: right;
+		background:#FDFFFF;
+		border-radius: 15px;
+		display: none;
+	}
+	#wrap .right p{
+		margin-left: 50px;
+		margin-top: 30px;
+	}
+	#wrap .right #tj{
+		width: 120px;
+		height: 40px;
+		background: #FFFFFF;
+		text-align: center;
+		line-height: 34px;
+		border-radius: 5px;
+		cursor: pointer;
+		border: 1px solid;
+	}
+
+    #wrap h2{
+    	position: absolute;
+    	right: 220px;top: 140px;
+    }
+	#middle{
+		border:1px solid red;
+		height: 324px;
+		width: 300px;
+		position: absolute;
+		right: 35px;top: 180px;
+		overflow: hidden;
+	}
+	#middle ul{
+		list-style: none;
+	}
+	#middle #area1 li{
+		padding-left:20px;
+		padding-top: 10px;
+	}
+	</style>
+</head>
+<body>
+<div id="header">
+	<h1><marquee width="1400"  behavior="lide" scrollamount="2"><span style="color:#FF359A">青</span><span style="color:#00CACA">春</span><span style="color:#79FF79">纪</span><span style="color:#5A5AAD">念</span><span style="color:#EA0000">册</span></marquee></h1>      <!--scrolldelay  间隔时间-->  <!--alternate 来回滚动-->
+	<p><a href="#" id="zc">注册</a></p>
+</div>	
+
+<div id="wrap">
+     <div class="left" id="left3"> 
+	     <div id="left1"> 
+	     <img src="./img/err.png">
+	        <h3 style="padding-top:10px;">用户登录:</h3>
+	        <form id="left4">
+	        <p><input type="text" id="username" placeholder="邮箱/用户名" name="username" style="height:22px;border-radius:5px;width: 280px;" size="30"></p>
+	        <p><input type="password" id="password" placeholder="密码" name="password" style="height:22px;border-radius:5px;width: 280px;" size="30"></p>
+	        </form>
+	        <p id="boy"><a href="#" style="text-decoration:none;color:black;">登录</a></p>
+	        <p id="girl" ><a href="#" style="text-decoration:none;color:black;">注册</a></p>
+	    </div>
+    </div>
+    <div class="right" id="right1">
+      <form>
+     	<p>昵称<input type="text" style="height:22px;border-radius:5px;" size="40">用户名为2-20个字符</p>
+    	<p>邮箱<input type="text" style="height:22px;border-radius:5px;" size="40">请输入邮箱以便激活与找回密码</p>
+    	<p>密码<input type="password" style="height:22px;border-radius:5px;" size="40">密码为6-20个字符</p>
+    	<p>密码<input type="password" style="height:22px;border-radius:5px;" size="40"> 请再次输入密码</p>
+    	<p id="tj"><a href="#" style="text-decoration:none;color:black;">提交</a></p>
+      </form>
+    </div>
+
+    <h2>音乐随我行</h2>
+     <div id="middle">
+	     <ul id="area1">
+	   	  <li>致爱-yoursong</li>
+	   	  <li>鹿晗-thatgoodgood</li>
+	   	  <li>薛之谦的-演员</li>
+	   	  <li>莫露露-爱情主演</li>
+	   	  <li>月色相</li>
+	   	  <li>只要有你</li>
+	   	  <li>把悲伤留给自己</li>
+	   	  <li>菊花香</li>
+	   	  <li>存在</li>
+	   	  <li>双节棍</li>
+	   	  <li>补回</li>
+	   	  <li>在哪里</li>
+          <li>三姐夫那大家妇女的</li>
+           <li>三姐夫那大家妇女的</li>
+            <li>三姐夫那大家妇女的</li>
+             <li>三姐夫那大家妇女的</li>
+              <li>三姐夫那大家妇女的</li>
+               <li>三姐夫那大家妇女的</li>	  
+	    	 <li>致爱-yoursong</li>
+	   	  <li>鹿晗-thatgoodgood</li>
+	   	  <li>薛之谦的-演员</li>
+	   	  <li>莫露露-爱情主演</li>
+	   	  <li>月色相</li>
+	   	  <li>只要有你</li>
+	   	  <li>把悲伤留给自己</li>
+	   	  <li>菊花香</li>
+	   	  <li>存在</li>
+	   	  <li>双节棍</li>
+	   	  <li>补回</li>
+	   	  <li>在哪里</li>
+          <li>三姐夫那大家妇女的</li>
+           <li>三姐夫那大家妇女的</li>
+            <li>三姐夫那大家妇女的</li>
+             <li>三姐夫那大家妇女的</li>
+              <li>三姐夫那大家妇女的</li>
+               <li>三姐夫那大家妇女的</li>
+	    </ul>
+      </div>
+</div>
+<script type="text/javascript">
+	  var middle=document.getElementById('middle');
+       var area1=document.getElementById('area1');
+       var myscroll;
+      function message(){
+       if(middle.scrollTop>=area1.offsetHeight/2){
+             middle.scrollTop=0;
+       }
+       else{
+          	middle.scrollTop++;
+       }
+       }
+        setInterval('message()',50)
+
+     var zc=document.getElementById('zc');
+     zc.onclick=omg
+     function omg(){
+	var right1=document.getElementById('right1');
+	var left3=document.getElementById('left3');
+		right1.style.display='block';
+		left3.style.display='block';
+	}    
+</script>
+</body>
+ <script src="./js/jquery.js"></script>
+ <script type="text/javascript">
+	$(document).ready(
+          function(){
+          	$("#wrap #left1").find("img").click(
+                 function(){
+              $("#left3").hide()  
+                 }
+          		)
+          }
+	)
+</script>
+</html>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+            function(){
+            	$("#left4").validate({
+            		rules:{
+            			username:{
+            				required:true,
+            				minlength:2,
+            				maxlength:10,
+            			},
+            			password:{
+            				required:true,
+            				minlength:2,
+            				maxlength:16,
+            			},
+            		},
+                    messages:{
+                    	username:{
+            				required:"必须填写用户名",
+            				minlength:"用户名最小为2位",
+            				maxlength:"用户名最大为10位",
+            			},
+            			password:{
+            				required:"必须填写用户名",
+            				minlength:"用户名最小为2位",
+            				maxlength:"用户名最大为16位",
+            			},
+                    }
+            	});
+            }
+	);
+</script>
