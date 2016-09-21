@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0}
+	.one{width: 158px;background: blue;height: 668px;float: left;}
+	.one ul{list-style: none;margin-top: 100px;margin-left: 40px;}
+	.one li{padding-top: 15px;font-size: 15px;color: white;cursor: pointer;}
+	.two{height: 38px;background: yellow;}
+	.two .text{width: 200px;background: yellow;border:0;border-bottom: 2px solid white;height:30px;float:right;margin-right: 30px;}
+	.three{height: 630px;float: right;}
+    .three div{width: 720px;height: 60px;background: #F1E1FF;margin-top: 20px;margin-right: 300px;}
+    .three div img{height: 50px;margin:5px;}
+    .three div p{font-size: 10px;position: relative;bottom:50px;left:80px;}
+    .three div form{position: relative;left: 400px;bottom: 80px;width: 280px;}
+     .three div .btn1{position:relative;bottom:20px;left:-80px;width: 38px;border: 0;background: #ff7575;height: 20px;text-align: center;border-radius: 5px;}
+      .three div .btn2{width: 38px;border: 0;background: #0080FF;height: 20px;text-align: center;border-radius: 5px;position:relative;bottom:10px;left: 140px;color: white;cursor: pointer;}
+      .four{width: 109px;height: 210px;position: fixed;top: 50px;right: 20px;background: #d3a4ff;border-radius: 5px;}
+      .four div{margin-top: 10px;}
+      .four p{width: 109px;background: blue;border: none;text-align: center;height:36px;line-height: 36px; border-radius: 5px;}
+      .four input{margin-left: 20px;margin-bottom: 5px;font-size: 10px;}
+  	</style>
+</head>
+<body>
+<div class="one">
+	<ul>
+		<li>内容管理</li>
+		<li>敏感词维护</li>
+		<li>推送管理</li>
+		<li>用户管理</li>
+	</ul>
+</div>
+<div class="two">
+	<form>
+		<input type="text" class="text" value="搜索"></input>
+	</form>
+</div>
+<div class="three">
+	<div>
+		<img src="./src/static/img/header.png">
+		<p>从无  &nbsp&nbsp 134****0000 &nbsp&nbsp  id：10038 <br/><br/>
+		<span style="font-size: 15px;">3小时前加入</span>
+		</p>
+		<form>
+			<input type="button" value="运营" class="btn1"></input>
+			<input type="button" value="进入" class="btn2"></input>
+			<input type="checkbox" class="cb1">禁封</input>
+		</form>
+	</div>
+	<div>
+		<img src="./src/static/img/header.png">
+		<img src="./src/static/img/pen.png" style="height: 20px;width: 20px; margin-left: -30px;">
+		<p>从无 &nbsp&nbsp  134****0000 &nbsp&nbsp  id：10038<br/><br/>
+		<span style="font-size: 15px;">3小时前加入</span>
+		</p>
+		<form>
+			<input type="button" value="运营" class="btn1"></input>
+			<input type="button" value="进入" class="btn2"></input>
+			<input type="checkbox" class="cb1">禁封</input>
+		</form>
+		<img src="./src/static/img/post.png" style="position: absolute;bottom: 10px;right: 10px;">
+	</div>
+</div>
+<div class="four">
+    <div>
+	<input type="radio">全部</input><br/>
+	<input type="radio">正常</input><br/>
+	<input type="radio">封禁</input><br/>
+	</div>
+	<div>
+	<input type="radio">全部</input><br/>
+	<input type="radio">用户</input><br/>
+	<input type="radio">运营</input><br/>
+	<div>
+	<div>
+	<input type="radio">按时间</input><br/>
+	<input type="radio">发帖</input><br/>
+    <p>确定</p>
+	</div>
+</div>
+<script src="./js/jquery.js"></script>
+</body>
+</html>

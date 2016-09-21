@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./js/bootstrap.css">
+	<style type="text/css">
+	body{width: 90%;
+		 margin: auto;
+	}
+	.navbar{background: white;
+		    border: 0;
+	}
+	#tab-list li a:hover{color: red;
+		                 border-bottom: 2px solid red;
+	}
+	#middle{height: 697px;}
+    #middle img{width: 1200px;
+    	        height: 650px;
+    }
+    #middle #movetop{position: relative;
+    	             top:-400px;
+    	             left: 200px;
+    	             background: none;
+    }
+    #middle #btn1{width: 300px;}
+    #row1 p{text-align: center;
+    	    border-right: 2px solid #999;
+    	    font-size: 15px;padding:10px 20px;
+    }
+    #left #image{margin-left: 480px;
+    }
+     #left #image2{width: 1147px;
+     	           margin-left: 35px;
+    }
+    #left h1{text-align: center;
+    }
+    #nav-bar2 ul li a:hover{background: red;
+    	                    color: white;
+    }
+    #nav-bar2 ul li{width:200px;
+                    text-align: center;
+    }
+    #nav-bar2 button{width: 250px;
+    	            background: red;
+    }
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-default container-fluid" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">新世界</a>
+    </div>
+    <div class="collapse navbar-collapse" id="tab-list">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">最新活动</a></li>
+         <li><a href="#">项目介绍</a></li>
+          <li><a href="#">爱心社区</a></li>
+           <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="middle">
+	<img src="./img/xiangshou.jpg" class="img-responsive" alt="Responsive image">
+	<div class="jumbotron"  id="movetop">
+	  <h1>Time Of New Life!</h1>
+	  <p>新时代需要体验新生活，享受新生活</p>
+	  <p><a class="btn btn-success btn-lg" href="#" role="button" id="btn1">开始体验</a></p>
+	</div>
+</div>
+<div class="row" id="row1">
+    <img src="./img/123.png">
+	<div class="col-md-3"><p>打造全新世界让你更爱你的生活地方大幅度发发发发</p></div>
+	<div class="col-md-3"><p>丰富多彩的世界让你发挥主人翁的意识多少发反反复复</p></div>
+	<div class="col-md-3"><p>时尚的超理念，让你体验未知的生活十分十分丰富</p></div>
+	<div class="col-md-3"><p>完善的培养机制，培养你全新的世界观防辐射服哥哥哥哥</p></div>
+</div>
+<div class="jumbotron" id="left">
+  <img src="./img/12.png" id="image">
+  <h1>关于新世界，你不知道的还有什么!</h1>
+
+    <div class="collapse navbar-collapse" id="nav-bar2">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">中国 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">美国</a></li>
+            <li><a href="#">韩国</a></li>
+            <li><a href="#">非洲</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">省份 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">江苏</a></li>
+            <li><a href="#">浙江</a></li>
+            <li><a href="#">四川</a></li>
+            <li><a href="#">河北</a></li>
+            <li><a href="#">西藏</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">城市 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">南通</a></li>
+            <li><a href="#">杭州</a></li>
+            <li><a href="#">北京</a></li>
+            <li><a href="#">南京</a></li>
+          </ul>
+        </li>
+      </ul>
+        <div class="form-group">
+       <button type="button" class="btn btn-primary btn-lg">搜索</button>
+        </div>
+    </div>
+    <img src="./img/121.png" id="image2">
+</div>
+</body>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</html>
