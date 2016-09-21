@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{background-image: url(./img/124.gif);}
+	.box{width: 360px;height: 100px;margin:150px auto ;}
+	header{color: #ffffff;font-size: 30px;}
+	.box a,.box2 a.denglu{color: #ffffff;display: block;width: 188px;height: 32px;background: rgb(0,187,238);text-align: center;line-height: 32px;text-decoration: none;border-radius: 10px;letter-spacing: 20px}
+	.box a:hover{background:rgb(0,135,182)}
+    #login{background: rgba(0,0,0,0.5);width: 290px;height: 300px;border: 1px solid red;display: none;position: absolute;top:100px;left: 700px;}
+    #login a .close{color: #cccccc;text-decoration: none;}
+    .box2{color: #ffffff;margin-left: 35px;}
+    .box2 h3{text-align: center;}
+    .box2.mall{color: #ffffff;text-decoration: none;}
+	</style>
+</head>
+<body>
+<div class="box">
+	<header>HTML5全屏背景视频</header>
+	<a href="#" class="butlog">登录</a>
+</div>
+<div id="login" >
+	<a href="#" class="close">×</a>
+	<div class="box2">
+		<h3>用户登录</h3>
+		<p>账号：<input type="text" name=""></p>
+        <p>密码：<input type="password" name=""></p>
+        <p><a href="#" class="mall">忘记密码</a></p>
+        <p><a href="#" class="denglu">登录</a></p>
+	</div>
+</div>
+<script src="./img/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+     $ (".butlog").click(function(){
+     	$("#login").show();
+     });
+     $(function(){
+     	$(".close").click(function() {
+     		$("#login").hide();
+     	});
+     })
+	});
+</script>
+</body>
+</html>
