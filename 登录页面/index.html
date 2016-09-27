@@ -288,8 +288,8 @@
                     if (e.code == 200) {
                         window.location.href = e.href;
                     }else{
-                    	obj_nametip.removeClass('tips-hidden').text(e.msg).addClass('tips-show');
-                        obj_pwdtip.removeClass('tips-hidden').text(e.msg).addClass('tips-show');
+                    	obj_nametip.removeClass('tips-hidden').text(e.msg||'数据提交出错').addClass('tips-show');
+                        obj_pwdtip.removeClass('tips-hidden').text(e.msg||'数据提交出错').addClass('tips-show');
                     }
                 },
                 error: function (e) {
