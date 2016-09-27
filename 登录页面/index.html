@@ -1,183 +1,307 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-	<title>优粉吧</title>
-<style type="text/css">
-body{
-	background-color: #272727;
-}
-.wrap{
-	position: relative;
-	width: 560px;
-	height: 560px;
-	margin: 0 auto;
-	text-align: center;
-	background-color:#272727;
-}
-.pic{
-	margin-top: 96px;
-}
-#login h2{
-	margin-top:-15px;
-	color:white;
-}
-#inputs #username{
-	background-image: url(images/icon_person_16.png);
-	background-repeat: no-repeat;
-	background-position: left center;
-}
-#inputs #password{
-	background-image: url(images/icon_pwd_16.png);
-	background-repeat: no-repeat;
-	background-position: left center;
-}
-#inputs input{
-	width: 370px;
-	height: 50px;
-	border-radius: 5px;
-	padding-left: 30px;
-	margin-bottom: 15px;
-}
-#submit{
-	width: 400px;
-	height: 50px;
-	border-radius: 25px;
-	background-color:#FF5809;
-	color: white;
-	font-size: 20px;
-	cursor: pointer;
-	border: none;
-	margin:0 auto ;
-	clear: both;
-	line-height: 50px;
-}
-.cbx{
-	width: 400px;
-	margin: -20px auto 50px;
-}
-.cbx img{
-    float: left;
-    color: white;
-    margin-top:2px;
-    cursor: pointer;
-}
-.cbx .rmb{
-	float: left;
-    color: white;
-}
-.cbx a{
-	float: right;
-	text-decoration: none;
-	color: white;
-}
-#inputs{
-	position: relative;
-}
-#inputs #user{
-	position: absolute;
-	left: 350px;
-	top: 20px;
-}
-#inputs #pass{
-	position: absolute;
-	left: 350px;
-	bottom: 35px;
-}
 
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>新媒体运营服务平台-运营端</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #262629;
+            font-family: 'Microsoft YaHei';
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .container{
+            position: relative;
+            width: 560px;
+            height: 560px;
+            margin: 95px auto 0;
+            padding-top: 50px;
+            border-top: 1px solid #363639;
+            border-bottom: 1px solid #363639;
+            overflow: hidden;
+        }
+        .wrap{
+            height: 510px;
+            width: 560px;
+            padding-top: 43px;
+            border-left: 1px solid #363639;
+            border-right: 1px solid #363639;
+            box-sizing: border-box;
+        }
+        .tit{
+            width: 472px;
+            height: 28px;
+            margin: 30px auto 0;
+        }
+        .client{
+            width: 60px;
+            height: 20px;
+            margin: 18px auto 0;
+        }
+        .input-wrap{
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .username-wrap,.password-wrap{
+            width: 400px;
+            height: 50px;
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .username-wrap{
+            margin: 40px auto 17px;
+        }
+        .password-wrap{
+            margin: 0 auto;
+        }
+        #username{
+            background:url('images/icon_person_16.png') 0 0 no-repeat;
+        }
+        #password{
+            background:url('images/icon_pwd_16.png') 0 0 no-repeat;
+        }
+        #username,#password{
+            width: 400px;
+            height: 50px;
+            font-size: 16px;
+            font-family: 'Microsoft YaHei';
+            color:#222;
+            padding-left: 50px;
+            background-position: 15px 50%;
+            border: 1px solid #262629;
+        }
+        .username-tips,.password-tips{
+            position: absolute;
+            font-size: 12px;
+            background:url('images/icon_error_16.png') 0 50% no-repeat;
+            /*background-position: 0 50%;*/
+            padding-left: 20px;
+            right: 95px;
+            color: #ff7300;
+            z-index: 10;
+        }
+        .username-tips{
+            top: 307px;
+        }
+        .password-tips{
+            top: 374px;
+        }
+        .tips-show{
+            display: block;
+        }
+        .tips-hidden{
+            display: none;
+        }
+        .btm{
+            height: 50px;
+            width: 400px;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 50px;
+        }
+        .no{
+            background: url('images/checkbox.png') 2px 50% no-repeat;
+        }
+        .yes{
+            background: url('images/checkboxed.png') 2px 50% no-repeat;
+        }
+        .isremeber{
+            float: left;
+            color: #ffffff;
+            padding-left: 20px;
+            cursor: pointer;
+        }
+        .forget{
+            float: right;
+            color: #999999;
+            cursor: pointer;
+        }
+        #sub{
+            display: block;
+            width: 400px;
+            height: 50px;
+            margin: 20px auto 0;
+            background-color: #ff7300;
+            border:transparent;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: #eee;
+            cursor: pointer;
+        }
+        .com-info{
+            margin-top: 157px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #ffffff;
+            opacity: 0.1;
+            font-size: 14px;
+        }
+        .spinner {
+            display: none;
+            margin: 0 auto;
+            width: 150px;
+            text-align: center;
+            line-height: 45px;
+        }
+
+        .spinner > div {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255,255,255,.7);
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+            animation: bouncedelay 1.4s infinite ease-in-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .spinner .bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+
+        .spinner .bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+
+        @-webkit-keyframes bouncedelay {
+            0%, 80%, 100% { -webkit-transform: scale(0.0) }
+            40% { -webkit-transform: scale(1.0) }
+        }
+
+        @keyframes bouncedelay {
+            0%, 80%, 100% {
+                transform: scale(0.0);
+                -webkit-transform: scale(0.0);
+            } 40% {
+                  transform: scale(1.0);
+                  -webkit-transform: scale(1.0);
+              }
+        }
+    </style>
 </head>
 <body>
-<div class="wrap">
-    <div class="pic">
-    	<img src="images/logo.png">
+<div class="container">
+    <div class="wrap">
+        <div class="tit">
+            <img src="images/tit.png">
+            <div class="username-tips tips-hidden"></div>
+        </div>
+
+        <div class="client">
+            <img src="images/client_2.png">
+            <div class="password-tips tips-hidden"></div>
+        </div>
+
+        <div class="input-wrap">
+            <div class="username-wrap">
+                <input id='username' placeholder="用户名" autocomplete="off" type="text" />
+            </div>
+            <div class="password-wrap">
+                <input id='password' placeholder="密码" type="password" />
+            </div>
+        </div>
+        <div class="btm">
+            <div class="isremeber no">记住账号</div>
+            <!--<div class="forget"><a href="javascript:;">忘记密码？</a></div>-->
+        </div>
+        <div id="sub">
+            <span>登 录</span>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+
     </div>
-	<form id="login">
-	    <h1><img src="images/tit.png"></h1>
-	    <h2>运营端</h2>
-	    <div id="inputs">
-	       	<input id="username" type="text" placeholder="用户名">
-	       	<div id="user"></div>
-	       	<input id="password" type="password" placeholder="密码">
-			<div id="pass"></div>
-	    </div>
-	    <div id="actions">
-	        <div class="cbx">
-		         <img src="images/checkboxed.png" id="checkbox">
-		         <span class="rmb">记住账号</span>
-		         <a href="">忘记密码?</a>
-	        </div>
-	        <div id="submit">登录</div>
-	    </div>
-	</form>
+</div>
+<div class="com-info">
+    浙ICP备14039592号 Copyright © 2015-2016 优粉吧--浙ICP备14039592号
 </div>
 </body>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript">
+    var obj_nametip	= $('.username-tips'),
+        obj_pwdtip  = $('.password-tips'),
+        obj_name =	$('#username'),
+        obj_pwd =	$('#password'),
+        obj_isremeber = $('.isremeber');
+
+    $(document).ready(function(){
+        obj_name.on('focus',function(){
+            obj_nametip.text('').removeClass('tips-show');
+            $('#sub').find('span').css('display','inline-block');
+            $('.spinner').hide();
+        });
+        obj_pwd.on('focus',function(){
+            obj_pwdtip.text('').removeClass('tips-show');
+            $('#sub').find('span').css('display','inline-block');
+            $('.spinner').hide();
+        });
+        obj_isremeber.on('click',function(){
+            if(obj_isremeber.hasClass('yes')){
+                obj_isremeber.removeClass('yes').addClass('no');
+            }else{
+                obj_isremeber.removeClass('no').addClass('yes');
+            }
+        });
+        $('#sub').on('click',function(e){
+            e.preventDefault();
+            var name = obj_name.val(),
+                pwd  = obj_pwd.val();
+            if(name =='' || name ==null){
+                obj_nametip.removeClass('tips-hidden').text('用户名不能为空').addClass('tips-show');
+                return false;
+            }
+            if(pwd =='' || pwd == null){
+                obj_pwdtip.removeClass('tips-hidden').text('密码不能为空').addClass('tips-show');
+                return false;
+            }
+            $.ajax({
+                url:  '',
+                type: 'POST',
+                dataType: 'json',
+                beforeSend: function (){
+                    $('#sub').find('span').css('display','none');
+                    $('.spinner').show();
+                },
+                data:  {
+                    username: name,
+                    password: pwd
+                },
+                success: function (e) {
+                    if (e.code == 200) {
+                        window.location.href = e.href;
+                    }else{
+                    	obj_nametip.removeClass('tips-hidden').text(e.msg).addClass('tips-show');
+                        obj_pwdtip.removeClass('tips-hidden').text(e.msg).addClass('tips-show');
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            })
+        });
+        $('#password').on('keyup',function(e){
+            if (e.keyCode == "13") {
+                $('#sub').click();
+            }
+        });
+    })
+</script>
 </html>
-<script type="text/javascript">
-	var username=document.getElementById('username');
-	var password=document.getElementById('password');
-	var submit=document.getElementById("submit");
-	 var user=document.getElementById("user");
-	var pass=document.getElementById("pass");
-	 submit.onclick=function(){
-	 	if (username.value=="") {
-	 	user.innerHTML="输入不能为空"
-	 }
-	 else if (username.value!=="") {
-	 	user.innerHTML=""
-	 }
-	 if (password.value==""){
-		pass.innerHTML="请输入密码"
- 	}
- 	else if (password.value!=="") {
- 		pass.innerHTML=""
- 	}
-}
-</script>
-
-<script type="text/javascript">
-var checkbox=document.getElementById('checkbox');
-    checkbox.onclick=function(){
-	 if(checkbox.getAttribute("src")=="images/checkboxed.png"){
-	 	checkbox.setAttribute("src","images/checkbox.png")
-	 }
-	 else if(checkbox.getAttribute("src")=="images/checkbox.png"){
-	 	checkbox.setAttribute("src","images/checkboxed.png")
-	 }	
-}
-</script>
-
-<script src="./js/jquery.js"></script>
-<script type="text/javascript">
-	$(document).ready(function () {
-		$("#submit").click(function(){
-			$.ajax({
-				type:"get",
-				url:"http://d.widalian.com:8600/appsrv/api/merchant/detail/CSH2/-/MC01116020020148 ",
-				dataType:"json",
-				data:{
-					// token:"CSH2",
-					// sessionid:"-",
-					// merchantid:"MC01116020020148",
-					// buildingid:"MK0111602002",
-					// cityname:"%E5%A4%A7%E8%BF%9E",
-					// movieid:"165359",
-					// cityid:"11602",
-					// longitude:"121.64",
-					// latitude:"121.64",
-					// radius:"323333999",
-					// pagenumber:"0",
-					// pagesize:"5",
-					// couponid:"25",
-					// cinemasid:"1133"
-					},
-				success:function(e){
-                	console.log(e);
-				},
-				error:function(s){
-					console.log(s);
-				}
-			})
-		})
-	})
-</script>
