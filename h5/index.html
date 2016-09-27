@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="email=no,address=no,telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <title></title>
+    <style type="text/css">
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    body{
+    	font-family:"Microsoft YaHei"
+    }
+    .modal{
+    	background-color:rgba(0,0,0,0.7);
+    	z-index: -10;
+    }
+    .wrap{
+    	position: relative;
+    	width: 580px;
+    	height: 690px;
+    	border-radius: 5px;
+    	text-align:center;
+    	margin: 0 auto;
+    	border: 1px solid white;
+    	background-color: white;
+    }
+    #cel{
+    	width: 30px;
+    	height: 30px;
+    	position: absolute;
+    	top:24px;
+    	left: 24px;
+    	font-size: 30px;
+    	cursor: pointer;
+    }
+    .picture{
+    	width: 130px;
+    	height: 130px;
+    	border-radius: 50%;
+    	overflow: hidden;
+    	margin: 64px auto 26px; 
+    }
+    .picture img{
+    	width: 100%;
+    }
+    .my-top{
+    	color: #6f6f6f 100%;
+    	opacity: 100%;
+    	font-size: 22px;
+    }
+    #pro{width: 340px;
+    	margin: 8px auto 20px;
+    }
+    .progress{
+    	width: 340px;
+    	height: 10px;
+    	background-color: #e6e6e6;
+    	border-radius: 4px;
+    }
+    .progress1{
+    	width: 150px;
+    	height: 10px;
+    	background-color: #11cd6e;
+    	/*opacity: 100%;*/
+    	border-radius: 4px;
+    }
+    .my-middle{
+    	color: #5b5b5b 100%;
+    	opacity: 100%;
+    	font-size: 22px;
+    }
+    #arc{
+    	width: 90px;
+    	height: 90px;
+    	background-color: #dfdfdf;
+    	border-radius: 50%;
+    	margin: 32px auto 10px;
+    	display: table;
+    }
+    #arc div{
+    	display: table-cell;
+    	vertical-align: middle;
+    }
+    #arc p{
+    	/*line-height:45px;*/
+    	font-size: 20px;
+    }
+    .myline{
+    	border: 1px dashed #979797;
+    }
+    .myrelation{
+    	margin-top: 40px;
+    	color: #696969 100%;
+    	opacity: 100%;
+    	font-size:22px;
+    	margin-left: 14px;
+    }
+    .mywrap{
+    	width:240px;
+    	margin: 12px auto 41px;
+    }
+    .left{
+    	float: left;
+    	color: #9b9b9b;
+    	font-size: 20px;
+    	text-align: left;
+    }
+    .right{
+    	float: left;
+    	color: #9b9b9b;
+    	font-size: 20px;
+    	text-align: left;
+    	margin-left: 20px;
+    }
+    button{
+    	position:relative;
+    	left: 48%;
+    	width: 80px;
+    	height: 30px;
+    	text-align: center;
+    	cursor: pointer;
+    	background-color: red;
+    	border: none;
+    	border-radius: 4px;
+    }
+    </style>
+</head>
+<body>
+<div class="modal">
+	<div class="bg">
+		<div class="wrap">
+			<p id="cel">×</p>
+
+			<div class="picture">
+				<img src="img/13.bmp">
+			</div>
+
+			<p class="my-top">40个产品/1000个产品</p>
+
+			<div id="pro">
+			  <div class="progress">
+			  	<div class="progress1"></div>
+			  </div>
+			</div>
+
+			<p class="my-middle">每月免费扩容一次</p>
+
+			<div id="arc">
+				<div>
+			  	<p>点 击</p>
+			  	<p>扩 容</p>
+				</div>
+			</div>
+
+			<div class="myline"></div>
+
+			<p class="myrelation">如您有疑问，请联系我们</p>
+
+			<div class="mywrap">
+				<div class="left">
+					<p>客服电话</p>
+					<p>QQ群</p>
+					<p>微信号</p>
+				</div>
+				<div class="right">
+					<p>88088208820</p>
+					<p>321926976</p>
+					<p>Melody-yoo</p>
+				</div>
+
+			</div>	
+		</div>
+	</div>
+<button onclick="showWrap()">登录</button>
+</div>
+</body>
+<script type="text/javascript">
+	function showWrap(){
+		var obj = document.querySelector(".wrap");
+		obj.style.display="block";
+	}
+    window.onload=function(){
+    	var cel=document.querySelector("#cel");
+    	cel.onclick=function(){
+    	var obj = document.querySelector(".wrap");
+    	obj.style.display="none";
+    	}
+    }
+</script>
+</html>
