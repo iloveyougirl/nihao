@@ -1,0 +1,323 @@
+/* css reset www.admin10000.com */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+.comwidth{
+	width: 1200px;
+	margin: 0 auto;
+}
+.comcolor{
+	color: #c81623;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.usetitle li a:hover,.left1 dt a:hover,.left1 dd a:hover,.nav-mainlist li a:hover,.search-wrap li a:hover,.topbar-list li a:hover{
+	color: red;
+	text-decoration: none;
+}
+.showmessage{
+	position: absolute;
+	left: 212px;
+	width: 1000px;
+	height: 520px;
+	background-color: #F7f7f7;
+	border: 1px solid red;
+	border-top: none;
+	z-index: 10;
+}
+
+
+
+
+/**/
+.topbar{
+	height: 30px;
+	background-color: #F7f7f7;
+	line-height: 30px;
+	margin-bottom: 24px;
+}
+.topbar-address{
+	font-size: 13px;
+	width: 75px;
+	float: left;
+}
+.topbar-address a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+
+.topbar-list{
+	width: 800px;
+	float: right;
+}
+.topbar-list h3{
+	float: left;
+	font-size: 13px;
+}
+.topbar-list h3 a:hover{
+	color: red;
+	text-decoration: none;
+}
+.topbar-list li{
+	float:left;
+	padding:0 10px;
+	font-size: 13px;
+	height: 13px;
+	border-right: 1px solid #dddddd;
+	line-height: 15px;
+	margin-top:8px;
+	margin-left: 5px;
+}
+
+
+
+section{
+	width: 100%;
+	height: 118px;
+	border-bottom: 2px solid #b61d1d;
+}
+.mainbar {
+	width: 950px;
+}
+.searchlogo{
+	width: 950px;
+	height: 75px;
+}
+.logo{
+	width: 360px;
+}
+.search-wrap{
+	margin-right: 40px;
+}
+.search{
+	width: 540px;
+	height: 33px;
+	border: 2px solid #b61d1d;
+}
+.search input{
+	width: 455px;
+	border: none;
+	outline: none;
+	height: 33px;
+	padding-left: 2px;
+}
+.search-kuang{
+	width: 83px;
+	height: 33px;
+	border: none;
+	background-color:  #b61d1d;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	line-height: 34px;
+	cursor: pointer;
+}
+.search-wrap li{
+	float: left;
+	font-size: 13px;
+	margin-top: 5px;
+	padding-right: 6px;
+}
+.nav-mainlist{
+	width: 950px;
+	margin-top: 3px;
+}
+.nav-mainlist h2{
+    width:202px;
+    height: 40px;
+    background-color:#b61d1d; 
+    color: white;
+    font-size: 14px; 
+    line-height: 40px;
+    padding-left: 10px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-mainlist ul{
+	width: 720px;
+	margin-left: 17px;
+}
+.nav-mainlist li{
+	float:left;
+	font-size: 16px;
+	padding-right: 37px;
+	line-height: 20px;
+	margin-top: 10px;
+	font-family:"Microsoft YaHei"；
+}
+.shoppingcar{
+	width: 250px;
+	height: 123px;
+	text-align: center;
+	padding-bottom:2px;
+}
+.myshoppingcar{
+	width: 138px;
+	height: 37px;
+	background-color: #F9f9f9;
+	border:1px solid #dfdfdf;
+	font-size: 13px;
+	text-align: center;
+	line-height: 37px;
+	background-image: url(../img/3.png);
+	background-position: 14px center;
+	background-repeat: no-repeat;
+	margin-left: 45px;
+	text-indent: 25px;
+}
+
+
+
+.shoplist li{
+	width:202px;
+    height: 34px;
+    background-color:#c81623; 
+    font-size: 13px; 
+    line-height: 34px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.shoplist li a{
+	color: white;
+}
+.shoplist li:hover{
+	background-color: white;
+}
+.shoplist li:hover a{
+	color: #c81623;
+	text-decoration: none;
+}
+.mainpicture{
+	width: 730px;
+	height: 455px;
+	margin:10px 0 0 10px;
+}
+
+.mainnews {
+	border: 1px solid #dddddd;
+	width: 240px;
+	height: 455px;
+	margin:10px 0 0 5px;
+}
+.mainnews .top-message{
+	border-bottom: 1px dotted #dddddd;
+	height: 30px;
+	width: 240px;
+}
+.mainnews .toptitle{
+	text-indent: 20px;
+	font-size: 18px;
+	line-height: 28px;
+}
+.mainnews .morething{
+	padding-right: 20px;
+	line-height: 28px;
+}
+.mainnews-news span{
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+}
+.mainnews-news li{
+    font-size: 13px;
+    padding:3px 5px;
+ 
+} 
+.mainnews-news li a:hover{
+	text-decoration: none;
+}
+.shoplist{
+	position:relative;
+}
+/*点击出现list*/
+.showmessage{
+	position: absolute;
+	top: 0px;
+	left: 212px;
+	width: 1000px;
+	height: 520px;
+	background-color: #F7f7f7;
+	border: 1px solid red;
+	border-top: none;
+	z-index: 10;
+	display: none;
+}
+.left1 dl{
+	width: 750px;
+	height: 30px;
+}
+.left1 dt{
+	float: left;
+	width: 120px;
+	text-align: center;
+	line-height: 30px;
+	font-family:"Microsoft YaHei";
+}
+.left1 dd{
+	float: left;
+	line-height: 30px;
+}
+.left1 dd a{
+	font-size: 13px;
+	border-right: 1px solid #dddddd;
+	text-align: center;
+	padding: 0 10px;
+}
+.right1{
+	width: 225px;
+	height: 520px;
+}
+.right1 h3{
+	padding-left: 40px;
+}
+.right1 img{
+	margin-top: 10px;
+}
+.shoplist li:hover .showmessage{
+    display: block;
+}
+.usetitle li{
+	width: 59px;
+	height: 70px;
+	float: left;
+	border: 1px solid #dddddd;
+	border-left: none;
+	text-align:center;
+}
+.usetitle li img{
+	margin:10px auto;
+}
+.usetitle li a{
+	font-size: 13px;
+}
+.usepicture img{
+	width: 240px;
+	height: 83px;
+}
+.myfocususe{
+	width:989px;
+}
+.myfocususe img{
+	float: left;
+	width: 245px;
+	height: 162px;
+	margin-right: 2px;
+}
