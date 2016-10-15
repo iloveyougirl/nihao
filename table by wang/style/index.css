@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*公共*/
+.public-color{
+	color: #7D7DFF;
+}
+.import{
+    border:none;
+}
+
+h1{
+	font-size: 25px;
+	font-family:"Microsoft YaHei";
+	margin: 14px 25px;
+}
+table{
+	border-collapse: collapse;
+	border: none;
+	margin-left: 25px;
+}
+tbody td ,thead th{
+	border: 1px solid #E0E0E0;
+}
+thead th{
+	text-align: left;
+	text-indent: 2px;
+	padding: 8px ;
+	font-family:"Microsoft YaHei";
+	margin: 14px 25px;
+	background-color:#F3F3FA;
+}
+tbody td img{
+	margin: 8px 100px 8px 8px;
+}
+.public-type{
+	width: 80px;
+	text-indent: 10px;
+}
+.public-name{
+	width: 150px;
+	text-indent: 10px;
+	font-size: 20px;
+}
+.public-appid{
+	width: 180px;
+	text-indent: 10px;
+}
+.public-rights{
+	width: 120px;
+	text-indent: 10px;
+}
+.public-pass{
+	width: 150px;
+	text-indent: 10px;
+}
+.public-shop{
+	width: 120px;
+	text-indent: 10px;
+}
+ul{
+	width: 180px;
+	text-indent: 10px;
+}
+ul li{
+	list-style: none;
+	float: left;
+	border-right: 1px solid #FF77FF;
+}
+ul li a{
+	padding-right: 7px;
+}
+.public-clear{
+	width: 70px;
+	text-indent: 10px;
+}
+tbody a{
+	color: #FF77FF;
+}

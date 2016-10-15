@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<title>youfen</title>
+</head>
+<body>
+<h1>优粉吧</h1>
+<table>
+	<thead>
+		<tr>
+			<th>公众号头像</th>
+			<th>类型</th>
+			<th>名称</th>
+			<th>appid</th>
+			<th>授权</th>
+			<th>开通</th>
+			<th>门店</th>
+			<th>设备</th>
+			<th>缓存</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- <tr>
+			<td><a href="#"><img src="img/1.jpg"></a></td>
+			<td class="public-type">1</td>
+			<td class="public-name">面朝</td>
+			<td class="public-appid">1234567809876</td>
+			<td class="public-rights"><a href="#">一键授权</a></td>
+			<td class="public-pass"><a href="#">一键开通wifi</a></td>
+			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td>
+				<ul>
+					<li><a href="#">查看</a></li>
+					<li><a href="#" class="public-color">添加</a></li>
+					<li class="import"><a href="#">导入</a></li>
+				</ul>
+			</td>
+			<td class="public-clear"><a href="#">清理</a></td>
+	    </tr>
+	    <tr>
+			<td><a href="#"><img src="img/2.jpg"></a></td>
+			<td class="public-type">1</td>
+			<td class="public-name">面朝</td>
+			<td class="public-appid">1234567809876</td>
+			<td class="public-rights"><a href="#" class="public-color">一键授权</a></td>
+			<td class="public-pass"><a href="#">一键开通wifi</a></td>
+			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td>
+				<ul>
+					<li><a href="#">查看</a></li>
+					<li><a href="#">添加</a></li>
+					<li class="import"><a href="#">导入</a></li>
+				</ul>
+			</td>
+			<td class="public-clear"><a href="#">清理</a></td>
+	    </tr>
+	    <tr>
+			<td><a href="#"><img src="img/3.jpg"></a></td>
+			<td class="public-type">1</td>
+			<td class="public-name">面朝</td>
+			<td class="public-appid">1234567809876</td>
+			<td class="public-rights"><a href="#">一键授权</a></td>
+			<td class="public-pass"><a href="#">一键开通wifi</a></td>
+			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td>
+				<ul>
+					<li><a href="#">查看</a></li>
+					<li><a href="#">添加</a></li>
+					<li class="import"><a href="#">导入</a></li>
+				</ul>
+			</td>
+			<td class="public-clear"><a href="#">清理</a></td>
+	    </tr>
+	    <tr>
+			<td><a href="#"><img src="img/4.jpg"></a></td>
+			<td class="public-type">1</td>
+			<td class="public-name">面朝</td>
+			<td class="public-appid">1234567809876</td>
+			<td class="public-rights"><a href="#">一键授权</a></td>
+			<td class="public-pass"><a href="#">一键开通wifi</a></td>
+			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td>
+				<ul>
+					<li><a href="#">查看</a></li>
+					<li><a href="#">添加</a></li>
+					<li class="import"><a href="#">导入</a></li>
+				</ul>
+			</td>
+			<td class="public-clear"><a href="#">清理</a></td>
+	    </tr>
+	    <tr>
+			<td><a href="#"><img src="img/5.jpg"></a></td>
+			<td class="public-type">1</td>
+			<td class="public-name">面朝</td>
+			<td class="public-appid">1234567809876</td>
+			<td class="public-rights"><a href="#">一键授权</a></td>
+			<td class="public-pass"><a href="#">一键开通wifi</a></td>
+			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td>
+				<ul>
+					<li><a href="#">查看</a></li>
+					<li><a href="#" class="public-color">添加</a></li>
+					<li class="import"><a href="#">导入</a></li>
+				</ul>
+			</td>
+			<td class="public-clear"><a href="#" class="public-color">清理</a></td>
+	    </tr>
+	    <tr>
+			<td><a href="#"><img src="img/6.jpg"></a></td>
+			<td class="public-type">1</td>
+			<td class="public-name">面朝</td>
+			<td class="public-appid">1234567809876</td>
+			<td class="public-rights"><a href="#">一键授权</a></td>
+			<td class="public-pass"><a href="#">一键开通wifi</a></td>
+			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td>
+				<ul>
+					<li><a href="#">查看</a></li>
+					<li><a href="#">添加</a></li>
+					<li class="import"><a href="#">导入</a></li>
+				</ul>
+			</td>
+			<td class="public-clear"><a href="#" class="public-color">清理</a></td>
+	    </tr> -->
+	</tbody>
+</table>
+
+</body>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// var trObj = $('table tbody tr');
+		// var length = trObj.length;
+		// var arr = [];
+		// for(var i=0;i<length;i++){
+		// 	var thumb  = trObj.eq(i).find('img').eq(0).attr('src');
+		// 	var type   = trObj.eq(i).find('.public-type').text();
+		// 	var name   = trObj.eq(i).find('.public-name').text();
+		// 	var appid  = trObj.eq(i).find('.public-appid').text();
+		// 	var id = i;
+		// 	var trData = {
+		// 		id:id,
+		// 		thumb:thumb,
+		// 		type:type,
+		// 		name:name,
+		// 		appid:appid,
+		// 	}
+		// 	arr.push(trData);	
+		// }
+		// console.log(arr);
+		var arr = [
+			{
+				appid: "1234567809876",
+				id: 1,
+				name: "面朝",
+				thumb: "img/1.jpg",
+				type: "1"
+			},{
+				appid: "1234567809876",
+				id: 2,
+				name: "面朝",
+				thumb: "img/2.jpg",
+				type: "1"
+			},{
+				appid: "1234567809876",
+				id: 3,
+				name: "面朝",
+				thumb: "img/3.jpg",
+				type: "1"
+			},{
+				appid: "1234567809876",
+				id: 4,
+				name: "面朝",
+				thumb: "img/4.jpg",
+				type: "1"
+			},{
+				appid: "1234567809876",
+				id: 5,
+				name: "面朝",
+				thumb: "img/4.jpg",
+				type: "1"
+			},{
+				appid: "1234567809876",
+				id: 6,
+				name: "面朝",
+				thumb: "img/6.jpg",
+				type: "1"
+			},
+		]
+		render(arr);
+	});
+
+	function render(arr){
+		var trs='';
+		for(var i=0;i<arr.length;i++){
+			var tr = 
+				'<tr id='+ arr[i].id +'>'
+				+'	<td><a href="javascript:;"><img src="'+ arr[i].thumb +'"></a></td>'
+				+'	<td class="public-type">'+ arr[i].type +'</td>'
+				+'	<td class="public-name">'+ arr[i].name +'</td>'
+				+'	<td class="public-appid">'+ arr[i].appid +'</td>'
+				+'	<td class="public-rights"><a href="javascript:;">一键授权</a></td>'
+				+'	<td class="public-pass"><a href="javascript:;">一键开通wifi</a></td>'
+				+'	<td class="public-shop"><a href="javascript:;">管理门店</a></td>'
+				+'	<td>'
+				+'		<ul>'
+				+'			<li class="check"><a href="javascript:;">查看</a></li>'
+				+'			<li class="add"><a href="javascript:;">添加</a></li>'
+				+'			<li class="import"><a href="javascript:;">导入</a></li>'
+				+'		</ul>'
+				+'	</td>'
+				+'	<td class="public-clear"><a href="javascript:;" class="public-color">清理</a></td>'
+			    +'</tr>';
+			$('table tbody').append(tr);
+			tr = '';
+		}
+	}
+
+	$(document).on('click','.public-rights a',function(){
+		var id = $(this).parent().parents().attr('id');
+		var appid = $(this).parents().siblings('.public-appid').text();
+		handleClick('rights',id,appid);
+	});
+
+	$(document).on('click','.public-pass a',function(){
+		var id = $(this).parent().parents().attr('id');
+		var appid = $(this).parents().siblings('.public-appid').text();
+		handleClick('pass',id,appid);
+	});
+
+	$(document).on('click','.public-shop a',function(){
+		var id = $(this).parent().parents().attr('id');
+		var appid = $(this).parents().siblings('.public-appid').text();
+		handleClick('shop',id,appid);
+	});
+
+	$(document).on('click','.check',function(){
+		var id = $(this).parent().parents().parents().attr('id');
+		var appid = $(this).parents().parents().siblings('.public-appid').text();
+		handleClick('check',id,appid);
+	});
+
+	$(document).on('click','.add',function(){
+		var id = $(this).parent().parents().parents().attr('id');
+		var appid = $(this).parents().parents().siblings('.public-appid').text();
+		handleClick('add',id,appid);
+	});
+
+	$(document).on('click','.import',function(){
+		var id = $(this).parent().parents().parents().attr('id');
+		var appid = $(this).parents().parents().siblings('.public-appid').text();
+		handleClick('import',id,appid);
+	});
+
+	$(document).on('click','.public-clear a',function(){
+		var id = $(this).parent().parents().attr('id');
+		var appid = $(this).parents().siblings('.public-appid').text();
+		handleClick('clear',id,appid);
+	});
+
+	function handleClick(clickNode,id,appid){
+		console.log(clickNode);
+		console.log(id);
+		console.log(appid);
+		alert('点击了' + clickNode + ' \n id: ' + id + '\n appid: ' + appid);
+	}
+
+
+</script>
+</html>
