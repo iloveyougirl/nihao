@@ -23,13 +23,13 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="#"><img src="img/1.jpg"></a></td>
-			<td class="public-type">1</td>
-			<td class="public-name">面朝</td>
-			<td class="public-appid">1234567809876</td>
-			<td class="public-rights"><a href="#">一键授权</a></td>
-			<td class="public-pass"><a href="#">一键开通wifi</a></td>
-			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td><a href="javascript:;" id="first-picture"><img src="img/1.jpg"></a></td>
+			<td class="public-type"></td>
+			<td class="public-name"></td>
+			<td class="public-appid"></td>
+			<td class="public-rights"></td>
+			<td class="public-pass"><a href="#"></a></td>
+			<td class="public-shop"><a href="#"></a></td>
 			<td>
 				<ul>
 					<li><a href="#">查看</a></li>
@@ -37,8 +37,10 @@
 					<li class="import"><a href="#">导入</a></li>
 				</ul>
 			</td>
-			<td class="public-clear"><a href="#">清理</a></td>
+			<td class="public-clear"><a href="#"></a></td>
 	    </tr>
+
+
 	    <tr>
 			<td><a href="#"><img src="img/2.jpg"></a></td>
 			<td class="public-type">1</td>
@@ -56,14 +58,16 @@
 			</td>
 			<td class="public-clear"><a href="#">清理</a></td>
 	    </tr>
+
+
 	    <tr>
-			<td><a href="#"><img src="img/3.jpg"></a></td>
-			<td class="public-type">1</td>
-			<td class="public-name">面朝</td>
-			<td class="public-appid">1234567809876</td>
-			<td class="public-rights"><a href="#">一键授权</a></td>
-			<td class="public-pass"><a href="#">一键开通wifi</a></td>
-			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td id="push-pic3"></td>
+			<td class="public-type"></td>
+			<td class="public-name"></td>
+			<td class="public-appid"></td>
+			<td class="public-rights"></td>
+			<td class="public-pass"></td>
+			<td class="public-shop"></td>
 			<td>
 				<ul>
 					<li><a href="#">查看</a></li>
@@ -71,16 +75,16 @@
 					<li class="import"><a href="#">导入</a></li>
 				</ul>
 			</td>
-			<td class="public-clear"><a href="#">清理</a></td>
+			<td class="public-clear"></td>
 	    </tr>
 	    <tr>
-			<td><a href="#"><img src="img/4.jpg"></a></td>
-			<td class="public-type">1</td>
-			<td class="public-name">面朝</td>
-			<td class="public-appid">1234567809876</td>
-			<td class="public-rights"><a href="#">一键授权</a></td>
-			<td class="public-pass"><a href="#">一键开通wifi</a></td>
-			<td class="public-shop"><a href="#">管理门店</a></td>
+			<td id="push-pic4"></td>
+			<td class="public-type"></td>
+			<td class="public-name"></td>
+			<td class="public-appid"></td>
+			<td class="public-rights"></td>
+			<td class="public-pass"></td>
+			<td class="public-shop"></td>
 			<td>
 				<ul>
 					<li><a href="#">查看</a></li>
@@ -88,8 +92,10 @@
 					<li class="import"><a href="#">导入</a></li>
 				</ul>
 			</td>
-			<td class="public-clear"><a href="#">清理</a></td>
+			<td class="public-clear"><a href="#"></a></td>
 	    </tr>
+
+
 	    <tr>
 			<td><a href="#"><img src="img/5.jpg"></a></td>
 			<td class="public-type">1</td>
@@ -127,4 +133,44 @@
 	</tbody>
 </table>
 </body>
-</html>
+</html> 
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript">
+	var JSONObject= {
+	"appid": "1234567809876",
+	"id": 1,
+	"name": "面朝",
+	"type": "1",
+	"rights":"一键授权",
+    "shop":"管理门店",
+    "save":"清理",
+    "pass":"一键开通wifi",
+    "source3":"img/3.jpg",
+    "source4":"img/4.jpg",
+    };
+    $(document).ready(function(){
+    	$("#first-picture").click(function(){
+    		$(".public-type").eq(0).text(""+JSONObject.id+"");
+    		$(".public-name").eq(0).text(""+JSONObject.name+"");
+    		$(".public-appid").eq(0).text(""+JSONObject.appid+"");
+    		$(".public-rights").eq(0).html("<a href='javascript:;'>"+JSONObject.rights+"</a>");
+    		$(".public-pass").eq(0).text(""+JSONObject.pass+"");
+    		$(".public-shop").eq(0).text(""+JSONObject.shop+"");
+    		$(".public-clear").eq(0).text(""+JSONObject.save+"");
+    	});
+    })
+
+    $(document).ready(function(){
+    	for (var i = 2; i < 4; i++) {
+    		$(".public-type").eq(i).text(""+JSONObject.id+"");
+    		$(".public-name").eq(i).text(""+JSONObject.name+"");
+    		$(".public-appid").eq(i).text(""+JSONObject.appid+"");
+    		$(".public-rights").eq(i).html("<a href='javascript:;'>"+JSONObject.rights+"</a>");
+    		$(".public-pass").eq(i).html("<a href='javascript:;'>"+JSONObject.pass+"</a>");
+    		$(".public-shop").eq(i).html("<a href='javascript:;'>"+JSONObject.shop+"</a>");
+    		$(".public-clear").eq(i).html("<a href='javascript:;'>"+JSONObject.save+"</a>");		
+    	}
+    	$("#push-pic3").html("<a href='#'><img src="+JSONObject.source3+"></a>")
+    	$("#push-pic4").html("<a href='#'><img src="+JSONObject.source4+"></a>")
+    })
+</script>
